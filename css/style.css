@@ -20,6 +20,10 @@ main {
   flex: 1 0 auto;
 }
 footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10% 10px 10%;
+  font-size: 25px;
   flex: 0 0 auto;
   background-color: #002a67;
   color: #fff;
@@ -28,8 +32,7 @@ svg {
   margin-bottom: -10px;
 }
 header {
-  border: 1px solid black;
-  padding: 10px 5%;
+  padding: 10px 10%;
 }
 
 ul.links li {
@@ -47,6 +50,11 @@ ul.links li::before {
   width: 30px;
   left: 0%;
   border-top: 2px solid #000;
+  transition: width 0.4s;
+}
+
+ul.links li:hover::before {
+  width: 100%;
 }
 
 section.my_info {
@@ -67,6 +75,7 @@ section.my_info .my_info_text_wrapper {
 }
 section.my_info .my_info_text {
   margin-top: -400px;
+  margin-left: 200px;
   color: #fff;
 }
 
@@ -96,14 +105,14 @@ section.about_me {
 }
 
 section.about_me h2 {
-  margin: 20px 0 20px 10%;
+  margin: 20px 0 40px 10%;
 
   color: #002a40;
   font-size: 40px;
 }
 
 section.about_me .about_me_text {
-  background-color: rgb(157, 174, 192, 0.3);
+  background-color: rgb(198, 205, 212);
   padding: 20px;
   border-radius: 30px;
   width: 80%;
@@ -111,22 +120,24 @@ section.about_me .about_me_text {
   font-size: 25px;
   color: #002a40;
   line-height: 40px;
+  position: relative;
 }
+section.about_me .about_me_text::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 99%;
 
-section.skills {
-  display: flex;
-}
-
-section.skills .skills_img {
-  width: 30%;
-}
-section.skills .skills_img img {
-  width: 100%;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid rgb(198, 205, 212);
+  border-right: 30px solid transparent;
 }
 
 section.skills .skills_info {
-  width: 70%;
-  padding: 20px 5%;
+  margin: 0 auto;
+  padding: 20px 10% 100px 10%;
 }
 
 section.skills .skills_info h2 {
@@ -136,6 +147,7 @@ section.skills .skills_info h2 {
 }
 
 .skills_grid {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
@@ -143,7 +155,8 @@ section.skills .skills_info h2 {
 
 .skill_item {
   display: flex;
-
+  background-color: rgb(39, 102, 133, 0.3);
+  color: #002a40;
   align-items: center;
   justify-content: space-between;
 }
@@ -159,6 +172,7 @@ section.skills .skills_info h2 {
   align-items: center;
   color: #fff;
   font-size: 20px;
+  padding: 5px;
 }
 .skill_item .progress_fill i {
   margin-right: 5px;
@@ -254,9 +268,21 @@ section.contacts h2 {
   color: #002a40;
   font-size: 40px;
 }
+section.contacts .contacts_links {
+  display: flex;
+  align-items: center;
+}
+
+section.contacts .contacts_links img {
+  width: 40%;
+  margin-left: 150px;
+}
+
 .navbar-wrapper {
-  width: 20rem;
-  height: 20rem;
+  margin-left: 100px;
+  margin-top: 150px;
+  width: 30rem;
+  height: 30rem;
 
   display: flex;
   justify-content: center;
@@ -264,8 +290,8 @@ section.contacts h2 {
 }
 
 .navbar {
-  width: 20rem;
-  height: 20rem;
+  width: 30rem;
+  height: 30rem;
   background-color: #6a7fdb;
   position: relative;
   display: flex;
@@ -286,7 +312,7 @@ section.contacts h2 {
 }
 
 .navbar-link i {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #fff;
   transition: color 0.3s;
 }
@@ -300,13 +326,13 @@ section.contacts h2 {
 }
 
 .navbar-link:nth-child(2) {
-  top: 5rem;
-  right: 2rem;
+  top: 7rem;
+  right: 4rem;
 }
 
 .navbar-link:nth-child(3) {
-  bottom: 5rem;
-  right: 2rem;
+  bottom: 7rem;
+  right: 4rem;
 }
 
 .navbar-link:nth-child(4) {
@@ -314,19 +340,19 @@ section.contacts h2 {
 }
 
 .navbar-link:nth-child(5) {
-  bottom: 5rem;
-  left: 2rem;
+  bottom: 7rem;
+  left: 4rem;
 }
 
 .navbar-link:nth-child(6) {
-  top: 5rem;
-  left: 2rem;
+  top: 7rem;
+  left: 4rem;
 }
 
 .navbar-btn {
   position: absolute;
-  width: 6rem;
-  height: 6rem;
+  width: 10rem;
+  height: 10rem;
   background-color: #ff6b6b;
   display: flex;
   justify-content: center;
@@ -337,7 +363,7 @@ section.contacts h2 {
 }
 
 .navbar-btn i {
-  font-size: 2rem;
+  font-size: 5rem;
   color: #fff;
   transition: color 0.5s;
 }
