@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+header {
+  border: 1px solid black;
+  padding: 10px 5%;
+}
+
+ul.links li {
+  display: inline; /* Отображать как строчный элемент */
+  margin-right: 30px; /* Отступ слева */
+  padding: 5px;
+  font-size: 30px;
+}
+
+section.my_info {
+  display: flex;
+}
+div {
+  border: 1px solid black;
+}
+section.my_info .avatar {
+  width: 600px;
+  height: 500px;
+}
+
+section.my_info .my_info_text_wrapper {
+  height: 0;
+  width: 100%;
+  border-top: 500px solid #002a67;
+  border-left: 200px solid transparent;
+  margin-left: -200px;
+}
+section.my_info .my_info_text {
+  margin-top: -400px;
+  color: #fff;
+}
+
+section.my_info .my_info_text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+section.my_info .my_info_text p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li i {
+  margin-right: 5px;
+}
+
+section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #fff;
+  list-style-type: none;
+}
+
+section.about_me {
+  width: 100%;
+  margin-bottom: 50px;
+}
+section {
+  border: 1px solid black;
+}
+
+section.about_me h2 {
+  margin: 20px 0 20px 10%;
+
+  color: #002a40;
+  font-size: 40px;
+}
+
+section.about_me .about_me_text {
+  background-color: rgb(157, 174, 192, 0.3);
+  padding: 20px;
+  border-radius: 30px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 25px;
+  color: #002a40;
+  line-height: 40px;
+}
+
+section.skills {
+  display: flex;
+}
+
+section.skills .skills_img {
+  width: 30%;
+}
+section.skills .skills_img img {
+  width: 100%;
+}
+
+section.skills .skills_info {
+  width: 70%;
+  padding: 20px 0 20px 50px;
+}
+
+section.skills .skills_info h2 {
+  color: #002a40;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.skills_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 40px;
+  grid-column-gap: 1px;
+}
+
+.skill_item {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill_item .progress_fill,
+.skill_item .progress_empty {
+  height: 100%;
+}
+
+.skill_item .progress_fill {
+  background-color: #002a67;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+.skill_item .progress_fill i {
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+.skill_item span {
+  margin-right: 5px;
+}
