@@ -13,32 +13,46 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 main {
   flex: 1 0 auto;
 }
-.footer {
+footer {
   flex: 0 0 auto;
+  background-color: #002a67;
+  color: #fff;
 }
-
+svg {
+  margin-bottom: -10px;
+}
 header {
   border: 1px solid black;
   padding: 10px 5%;
 }
 
 ul.links li {
-  display: inline; /* Отображать как строчный элемент */
-  margin-right: 30px; /* Отступ слева */
+  display: inline;
+  margin-right: 30px;
   padding: 5px;
   font-size: 30px;
+  position: relative;
+}
+ul.links li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  width: 30px;
+  left: 0%;
+  border-top: 2px solid #000;
 }
 
 section.my_info {
   display: flex;
 }
-div {
-  border: 1px solid black;
-}
+
 section.my_info .avatar {
   width: 600px;
   height: 500px;
@@ -80,9 +94,6 @@ section.about_me {
   width: 100%;
   margin-bottom: 50px;
 }
-section {
-  border: 1px solid black;
-}
 
 section.about_me h2 {
   margin: 20px 0 20px 10%;
@@ -115,7 +126,7 @@ section.skills .skills_img img {
 
 section.skills .skills_info {
   width: 70%;
-  padding: 20px 0 20px 50px;
+  padding: 20px 5%;
 }
 
 section.skills .skills_info h2 {
@@ -127,13 +138,12 @@ section.skills .skills_info h2 {
 .skills_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 40px;
-  grid-column-gap: 1px;
+  grid-gap: 40px;
 }
 
 .skill_item {
   display: flex;
-  width: 500px;
+
   align-items: center;
   justify-content: space-between;
 }
@@ -157,4 +167,142 @@ section.skills .skills_info h2 {
 
 .skill_item span {
   margin-right: 5px;
+}
+section.portfolio {
+  padding: 0 10%;
+}
+section.portfolio h2 {
+  margin: 20px 0;
+
+  color: #002a40;
+  font-size: 40px;
+}
+section.portfolio .portfolio_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+section.portfolio .portfolio_grid .portfolio_item {
+  position: relative;
+}
+
+section.portfolio .portfolio_grid .portfolio_item img {
+  width: 100%;
+}
+section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+  background-color: rgb(39, 102, 133, 0.5);
+  transition: opacity 0.5s;
+}
+section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover:hover {
+  opacity: 0;
+}
+
+section.contacts {
+  padding: 20px 10%;
+}
+section.contacts h2 {
+  margin: 20px 0 20px 0;
+
+  color: #002a40;
+  font-size: 40px;
+}
+.navbar-wrapper {
+  width: 20rem;
+  height: 20rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 20rem;
+  height: 20rem;
+  background-color: #6a7fdb;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: scale(0) rotate(-180deg);
+  transition: transform 0.5s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.change .navbar {
+  transform: scale(1) rotate(0);
+}
+
+.navbar-link {
+  position: absolute;
+}
+
+.navbar-link i {
+  font-size: 3rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover i {
+  color: #222;
+}
+
+.navbar-link:nth-child(1) {
+  top: 2rem;
+}
+
+.navbar-link:nth-child(2) {
+  top: 5rem;
+  right: 2rem;
+}
+
+.navbar-link:nth-child(3) {
+  bottom: 5rem;
+  right: 2rem;
+}
+
+.navbar-link:nth-child(4) {
+  bottom: 2rem;
+}
+
+.navbar-link:nth-child(5) {
+  bottom: 5rem;
+  left: 2rem;
+}
+
+.navbar-link:nth-child(6) {
+  top: 5rem;
+  left: 2rem;
+}
+
+.navbar-btn {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background-color: #ff6b6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.navbar-btn i {
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.change .navbar-btn i {
+  transform: rotate(45deg);
+  transition: transform 0.5s;
 }
