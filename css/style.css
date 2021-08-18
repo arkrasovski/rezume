@@ -27,7 +27,9 @@ footer {
   flex: 0 0 auto;
   background-color: #002a67;
   color: #fff;
+  font-family: "Bellota Text", cursive;
 }
+
 svg {
   margin-bottom: -10px;
 }
@@ -41,6 +43,7 @@ ul.links li {
   padding: 5px;
   font-size: 30px;
   position: relative;
+  font-family: "Comfortaa", cursive;
 }
 ul.links li::before {
   content: "";
@@ -77,6 +80,8 @@ section.my_info .my_info_text {
   margin-top: -400px;
   margin-left: 200px;
   color: #fff;
+  font-family: "Bellota Text", cursive;
+  font-size: 20px;
 }
 
 section.my_info .my_info_text h1 {
@@ -88,7 +93,7 @@ section.my_info .my_info_text p {
   font-size: 25px;
   margin-bottom: 30px;
 }
-section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li i {
+section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li span {
   margin-right: 5px;
 }
 
@@ -100,15 +105,16 @@ section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li {
 }
 
 section.about_me {
+  margin-top: 70px;
   width: 100%;
   margin-bottom: 50px;
 }
 
 section.about_me h2 {
   margin: 20px 0 40px 10%;
-
+  font-family: "Comfortaa", cursive;
   color: #002a40;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 section.about_me .about_me_text {
@@ -118,6 +124,7 @@ section.about_me .about_me_text {
   width: 80%;
   margin: 0 auto;
   font-size: 25px;
+  font-family: "Bellota Text", cursive;
   color: #002a40;
   line-height: 40px;
   position: relative;
@@ -141,8 +148,9 @@ section.skills .skills_info {
 }
 
 section.skills .skills_info h2 {
+  font-family: "Comfortaa", cursive;
   color: #002a40;
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 40px;
 }
 
@@ -159,6 +167,8 @@ section.skills .skills_info h2 {
   color: #002a40;
   align-items: center;
   justify-content: space-between;
+  font-family: "Bellota Text", cursive;
+  font-size: 20px;
 }
 
 .skill_item .progress_fill,
@@ -174,9 +184,10 @@ section.skills .skills_info h2 {
   font-size: 20px;
   padding: 5px;
 }
-.skill_item .progress_fill i {
+.skill_item .progress_fill span {
   margin-right: 5px;
   font-size: 30px;
+  color: #fff;
 }
 
 .skill_item span {
@@ -187,9 +198,9 @@ section.portfolio {
 }
 section.portfolio h2 {
   margin: 20px 0;
-
+  font-family: "Comfortaa", cursive;
   color: #002a40;
-  font-size: 40px;
+  font-size: 50px;
 }
 section.portfolio .portfolio_grid {
   display: grid;
@@ -259,14 +270,26 @@ section.portfolio
   height: 100%;
 }
 
+section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover span {
+  font-family: "Bellota Text", cursive;
+  font-size: 20px;
+  color: #fff;
+}
+section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
+  font-family: "Comfortaa", cursive;
+  font-size: 35px;
+  color: #fff;
+}
+
 section.contacts {
   padding: 20px 10%;
 }
 section.contacts h2 {
   margin: 20px 0 20px 0;
+  font-family: "Comfortaa", cursive;
 
   color: #002a40;
-  font-size: 40px;
+  font-size: 50px;
 }
 section.contacts .contacts_links {
   display: flex;
@@ -311,13 +334,13 @@ section.contacts .contacts_links img {
   position: absolute;
 }
 
-.navbar-link i {
+.navbar-link span {
   font-size: 5rem;
   color: #fff;
   transition: color 0.3s;
 }
 
-.navbar-link:hover i {
+.navbar-link:hover span {
   color: #222;
 }
 
@@ -362,13 +385,13 @@ section.contacts .contacts_links img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.navbar-btn i {
-  font-size: 5rem;
+.navbar-btn span {
+  font-size: 3rem;
   color: #fff;
   transition: color 0.5s;
 }
 
-.change .navbar-btn i {
+.change .navbar-btn span {
   transform: rotate(45deg);
   transition: transform 0.5s;
 }
