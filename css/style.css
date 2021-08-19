@@ -1238,4 +1238,8 @@ section.contacts .contacts_links img {
     top: 20px;
     width: 20px;
   }
+
+  .adaptate_nav > ul.links li:hover::before {
+    width: 100%;
+  }
 }
