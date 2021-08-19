@@ -33,6 +33,7 @@ footer {
 svg {
   margin-bottom: -10px;
 }
+
 header {
   padding: 10px 10%;
 }
@@ -43,8 +44,13 @@ ul.links li {
   padding: 5px;
   font-size: 30px;
   position: relative;
+}
+
+ul.links li a {
+  color: #000;
   font-family: "Comfortaa", cursive;
 }
+
 ul.links li::before {
   content: "";
   display: block;
@@ -60,6 +66,13 @@ ul.links li:hover::before {
   width: 100%;
 }
 
+section h2 {
+  margin: 40px 0 20px 0;
+  font-family: "Comfortaa", cursive;
+  color: #002a40;
+  font-size: 50px;
+}
+
 section.my_info {
   display: flex;
 }
@@ -70,18 +83,36 @@ section.my_info .avatar {
 }
 
 section.my_info .my_info_text_wrapper {
-  height: 0;
   width: 100%;
+  position: relative;
+}
+
+section.my_info .my_info_text_wrapper::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid transparent;
   border-top: 500px solid #002a67;
   border-left: 200px solid transparent;
-  margin-left: -200px;
 }
+
 section.my_info .my_info_text {
-  margin-top: -400px;
-  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 200px;
   color: #fff;
   font-family: "Bellota Text", cursive;
   font-size: 20px;
+  background-color: #002a67;
+  height: 100%;
+  box-sizing: padding-box;
+}
+
+section.my_info .my_info_text_wrapper > svg {
+  margin-top: -100px;
 }
 
 section.my_info .my_info_text h1 {
@@ -107,22 +138,14 @@ section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li {
 section.about_me {
   margin-top: 70px;
   width: 100%;
-  margin-bottom: 50px;
-}
-
-section.about_me h2 {
-  margin: 20px 0 40px 10%;
-  font-family: "Comfortaa", cursive;
-  color: #002a40;
-  font-size: 50px;
+  padding: 0 10%;
 }
 
 section.about_me .about_me_text {
   background-color: rgb(198, 205, 212);
   padding: 20px;
   border-radius: 30px;
-  width: 80%;
-  margin: 0 auto;
+
   font-size: 25px;
   font-family: "Bellota Text", cursive;
   color: #002a40;
@@ -144,14 +167,7 @@ section.about_me .about_me_text::before {
 
 section.skills .skills_info {
   margin: 0 auto;
-  padding: 20px 10% 100px 10%;
-}
-
-section.skills .skills_info h2 {
-  font-family: "Comfortaa", cursive;
-  color: #002a40;
-  font-size: 50px;
-  margin-bottom: 40px;
+  padding: 0 10%;
 }
 
 .skills_grid {
@@ -196,12 +212,7 @@ section.skills .skills_info h2 {
 section.portfolio {
   padding: 0 10%;
 }
-section.portfolio h2 {
-  margin: 20px 0;
-  font-family: "Comfortaa", cursive;
-  color: #002a40;
-  font-size: 50px;
-}
+
 section.portfolio .portfolio_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -282,15 +293,9 @@ section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
 }
 
 section.contacts {
-  padding: 20px 10%;
+  padding: 0 10%;
 }
-section.contacts h2 {
-  margin: 20px 0 20px 0;
-  font-family: "Comfortaa", cursive;
 
-  color: #002a40;
-  font-size: 50px;
-}
 section.contacts .contacts_links {
   display: flex;
   align-items: center;
@@ -394,4 +399,734 @@ section.contacts .contacts_links img {
 .change .navbar-btn span {
   transform: rotate(45deg);
   transition: transform 0.5s;
+}
+
+@media screen and (max-width: 1850px) and (min-width: 1550px) {
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover span {
+    font-size: 15px;
+  }
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1600px) and (min-width: 1250px) {
+  section.my_info .my_info_text h1 {
+    font-size: 45px;
+  }
+  section.my_info .my_info_text {
+    padding-left: 100px;
+  }
+  section.my_info .my_info_text p {
+    font-size: 20px;
+  }
+
+  ul.links li {
+    font-size: 25px;
+  }
+
+  ul.links li::before {
+    top: 35px;
+  }
+
+  section h2 {
+    font-size: 45px;
+  }
+
+  section.about_me .about_me_text {
+    font-size: 20px;
+  }
+
+  section.my_info .my_info_text_wrapper > svg {
+    margin-top: -50px;
+  }
+
+  .skill_item .progress_fill {
+    font-size: 15px;
+    padding: 4px;
+  }
+  .skill_item .progress_fill span {
+    font-size: 25px;
+  }
+
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover span {
+    font-size: 12px;
+  }
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
+    font-size: 20px;
+  }
+
+  section.contacts .contacts_links img {
+    width: 30%;
+    margin-left: 100px;
+  }
+
+  .navbar-wrapper {
+    margin-top: 100px;
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .navbar {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .navbar-btn {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .navbar-btn span {
+    font-size: 2.5rem;
+  }
+
+  .navbar-link span {
+    font-size: 3rem;
+  }
+
+  .navbar-link:nth-child(1) {
+    top: 2rem;
+  }
+
+  .navbar-link:nth-child(2) {
+    top: 7rem;
+    right: 3rem;
+  }
+
+  .navbar-link:nth-child(3) {
+    bottom: 7rem;
+    right: 3rem;
+  }
+
+  .navbar-link:nth-child(4) {
+    bottom: 2rem;
+  }
+
+  .navbar-link:nth-child(5) {
+    bottom: 7rem;
+    left: 3rem;
+  }
+
+  .navbar-link:nth-child(6) {
+    top: 7rem;
+    left: 3rem;
+  }
+}
+
+@media screen and (max-width: 1250px) and (min-width: 1000px) {
+  section.my_info .avatar {
+    width: 400px;
+    height: 330px;
+  }
+
+  section.my_info .avatar img {
+    width: 400px;
+    height: 330px;
+  }
+
+  section.my_info .my_info_text_wrapper::before {
+    border-top: 330px solid #002a67;
+  }
+
+  section.my_info .my_info_text {
+    padding-left: 100px;
+  }
+
+  section.my_info .my_info_text h1 {
+    font-size: 30px;
+    margin-bottom: 7px;
+  }
+
+  section.my_info .my_info_text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  section.my_info .my_info_text_wrapper > svg {
+    margin-top: -50px;
+  }
+  ul.links li {
+    font-size: 20px;
+  }
+
+  ul.links li::before {
+    top: 30px;
+  }
+
+  section h2 {
+    font-size: 40px;
+  }
+
+  section.about_me h2 {
+    margin-bottom: 30px;
+  }
+
+  section.about_me .about_me_text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .skill_item .progress_fill {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .skill_item > span {
+    font-size: 15px;
+  }
+
+  .skill_item .progress_fill span {
+    font-size: 20px;
+  }
+
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover span {
+    font-size: 10px;
+  }
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
+    font-size: 15px;
+  }
+
+  section.contacts .contacts_links img {
+    width: 30%;
+    margin-left: 100px;
+  }
+
+  .navbar-wrapper {
+    margin-left: 0;
+    margin-top: 100px;
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .navbar {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .navbar-btn {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .navbar-btn span {
+    font-size: 2.5rem;
+  }
+
+  .navbar-link span {
+    font-size: 3rem;
+  }
+
+  .navbar-link:nth-child(1) {
+    top: 2rem;
+  }
+
+  .navbar-link:nth-child(2) {
+    top: 6rem;
+    right: 3.5rem;
+  }
+
+  .navbar-link:nth-child(3) {
+    bottom: 6rem;
+    right: 3.5rem;
+  }
+
+  .navbar-link:nth-child(4) {
+    bottom: 2rem;
+  }
+
+  .navbar-link:nth-child(5) {
+    bottom: 6rem;
+    left: 3.5rem;
+  }
+
+  .navbar-link:nth-child(6) {
+    top: 6rem;
+    left: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  section.my_info .avatar {
+    width: 300px;
+    height: 250px;
+  }
+
+  section.my_info .avatar img {
+    width: 300px;
+    height: 250px;
+  }
+
+  section.my_info .my_info_text_wrapper::before {
+    border-top: 250px solid #002a67;
+    border-left: 100px solid transparent;
+  }
+
+  section.my_info .my_info_text {
+    padding-left: 50px;
+  }
+
+  section.my_info .my_info_text h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  section.my_info .my_info_text p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li {
+    font-size: 13px;
+    margin-bottom: 9px;
+  }
+
+  section.my_info .my_info_text_wrapper > svg {
+    margin-top: -50px;
+  }
+  ul.links li {
+    font-size: 20px;
+  }
+
+  ul.links li::before {
+    top: 30px;
+  }
+
+  section h2 {
+    font-size: 40px;
+  }
+
+  section.about_me h2 {
+    margin-bottom: 30px;
+  }
+
+  section.about_me .about_me_text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .skill_item .progress_fill {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .skill_item > span {
+    font-size: 15px;
+  }
+
+  .skill_item .progress_fill span {
+    font-size: 20px;
+  }
+
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover span {
+    font-size: 7px;
+  }
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
+    font-size: 12px;
+  }
+
+  section.contacts .contacts_links img {
+    width: 30%;
+    margin-left: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navbar-wrapper {
+    margin-left: 0;
+    margin-top: 100px;
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .navbar {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .navbar-btn {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .navbar-btn span {
+    font-size: 2.5rem;
+  }
+
+  .navbar-link span {
+    font-size: 2rem;
+  }
+
+  .navbar-link:nth-child(1) {
+    top: 2rem;
+  }
+
+  .navbar-link:nth-child(2) {
+    top: 5rem;
+    right: 2rem;
+  }
+
+  .navbar-link:nth-child(3) {
+    bottom: 5rem;
+    right: 2rem;
+  }
+
+  .navbar-link:nth-child(4) {
+    bottom: 2rem;
+  }
+
+  .navbar-link:nth-child(5) {
+    bottom: 5rem;
+    left: 2rem;
+  }
+
+  .navbar-link:nth-child(6) {
+    top: 5rem;
+    left: 2rem;
+  }
+  footer {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  section.my_info {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  section.my_info .avatar {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.my_info .avatar img {
+    width: 100%;
+  }
+
+  section.my_info .my_info_text_wrapper::before {
+    bottom: 100%;
+    right: 0;
+    border-bottom: 400px solid #002a67;
+    border-left: 150px solid transparent;
+  }
+
+  section.my_info .my_info_text {
+    padding: 20px 0 0 50px;
+    display: block;
+    height: 100%;
+    margin-top: -10px;
+  }
+
+  section.my_info .my_info_text h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  section.my_info .my_info_text p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li {
+    font-size: 13px;
+    margin-bottom: 9px;
+  }
+
+  section.my_info .my_info_text_wrapper > svg {
+    margin-top: -10px;
+  }
+  ul.links li {
+    font-size: 20px;
+  }
+
+  ul.links li::before {
+    top: 30px;
+  }
+
+  section h2 {
+    font-size: 35px;
+  }
+
+  section.about_me {
+    margin: 0;
+  }
+
+  section.about_me h2 {
+    margin-bottom: 30px;
+  }
+
+  section.about_me .about_me_text {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .skills_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill_item .progress_fill {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .skill_item > span {
+    font-size: 15px;
+  }
+
+  .skill_item .progress_fill span {
+    font-size: 20px;
+  }
+
+  section.portfolio .portfolio_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+  }
+
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover span {
+    font-size: 10px;
+  }
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
+    font-size: 18px;
+  }
+
+  section.contacts .contacts_links {
+    display: block;
+  }
+
+  section.contacts .contacts_links img {
+    width: 30%;
+    transform: rotate(90deg);
+  }
+
+  .navbar-wrapper {
+    margin: 0 auto;
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .navbar {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .navbar-btn {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .navbar-btn span {
+    font-size: 2.5rem;
+  }
+
+  .navbar-link span {
+    font-size: 2rem;
+  }
+
+  .navbar-link:nth-child(1) {
+    top: 2rem;
+  }
+
+  .navbar-link:nth-child(2) {
+    top: 5rem;
+    right: 2rem;
+  }
+
+  .navbar-link:nth-child(3) {
+    bottom: 5rem;
+    right: 2rem;
+  }
+
+  .navbar-link:nth-child(4) {
+    bottom: 2rem;
+  }
+
+  .navbar-link:nth-child(5) {
+    bottom: 5rem;
+    left: 2rem;
+  }
+
+  .navbar-link:nth-child(6) {
+    top: 5rem;
+    left: 2rem;
+  }
+  footer {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  section.my_info {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  section.my_info .avatar {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.my_info .avatar img {
+    width: 100%;
+  }
+
+  section.my_info .my_info_text_wrapper::before {
+    bottom: 100%;
+    right: 0;
+    border-bottom: 200px solid #002a67;
+    border-left: 100px solid transparent;
+  }
+
+  section.my_info .my_info_text {
+    padding: 20px 0 0 50px;
+    display: block;
+    height: 100%;
+    margin-top: -10px;
+  }
+
+  section.my_info .my_info_text h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  section.my_info .my_info_text p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li {
+    font-size: 13px;
+    margin-bottom: 9px;
+  }
+
+  section.my_info .my_info_text_wrapper > svg {
+    margin-top: -10px;
+  }
+  ul.links li {
+    font-size: 20px;
+  }
+
+  ul.links li::before {
+    top: 30px;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+
+  section.about_me {
+    margin: 0;
+  }
+
+  section.about_me h2 {
+    margin-bottom: 30px;
+  }
+
+  section.about_me .about_me_text {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .skills_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill_item .progress_fill {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .skill_item > span {
+    font-size: 15px;
+  }
+
+  .skill_item .progress_fill span {
+    font-size: 20px;
+  }
+
+  section.portfolio .portfolio_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover span {
+    font-size: 5px;
+  }
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
+    font-size: 10px;
+  }
+
+  section.contacts .contacts_links {
+    display: block;
+  }
+
+  section.contacts .contacts_links img {
+    display: block;
+    margin: 0 auto;
+
+    width: 30%;
+    transform: rotate(90deg);
+  }
+
+  .navbar-wrapper {
+    margin: 0 auto;
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .navbar {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .navbar-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .navbar-btn span {
+    font-size: 1.5rem;
+  }
+
+  .navbar-link span {
+    font-size: 1.5rem;
+  }
+
+  .navbar-link:nth-child(1) {
+    top: 1.5rem;
+  }
+
+  .navbar-link:nth-child(2) {
+    top: 3.5rem;
+    right: 2rem;
+  }
+
+  .navbar-link:nth-child(3) {
+    bottom: 3.5rem;
+    right: 2rem;
+  }
+
+  .navbar-link:nth-child(4) {
+    bottom: 1.5rem;
+  }
+
+  .navbar-link:nth-child(5) {
+    bottom: 3.5rem;
+    left: 2rem;
+  }
+
+  .navbar-link:nth-child(6) {
+    top: 3.5rem;
+    left: 2rem;
+  }
+  footer {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 320px) {
+  header > ul {
+    display: none;
+  }
 }
