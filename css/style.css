@@ -15,13 +15,23 @@ body {
   min-height: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  position: relative;
+}
+.adaptate_nav_wrapper {
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
 }
 main {
   flex: 1 0 auto;
+  position: relative;
+  z-index: 0;
 }
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 10% 10px 10%;
   font-size: 25px;
   flex: 0 0 auto;
@@ -31,14 +41,19 @@ footer {
 }
 
 svg {
-  margin-bottom: -10px;
+  margin-bottom: -5px;
 }
 
 header {
+  position: relative;
+  z-index: 2;
   padding: 10px 10%;
 }
+header > span {
+  display: none;
+}
 
-ul.links li {
+header > ul.links li {
   display: inline;
   margin-right: 30px;
   padding: 5px;
@@ -46,12 +61,13 @@ ul.links li {
   position: relative;
 }
 
-ul.links li a {
+header > ul.links li a {
   color: #000;
   font-family: "Comfortaa", cursive;
 }
 
-ul.links li::before {
+header > ul.links li::before,
+.adaptate_nav > ul.links li::before {
   content: "";
   display: block;
   position: absolute;
@@ -89,6 +105,7 @@ section.my_info .my_info_text_wrapper {
 
 section.my_info .my_info_text_wrapper::before {
   content: "";
+  display: block;
   position: absolute;
   right: 100%;
   width: 0;
@@ -1128,5 +1145,47 @@ section.contacts .contacts_links img {
 @media screen and (max-width: 800px) and (min-width: 320px) {
   header > ul {
     display: none;
+  }
+  header > span {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  header {
+    padding: 5px 50px;
+  }
+  .adaptate_nav_wrapper {
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    visibility: visible;
+  }
+
+  .adaptate_nav {
+    width: 0%;
+    transition: width 0.4s;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    height: 100%;
+    background-color: #002a40;
+    opacity: 1;
+  }
+
+  .adaptate_nav > ul.links li {
+    padding: 5px;
+    font-size: 25px;
+    position: relative;
+    margin-bottom: 15px;
+    list-style-type: none;
+  }
+
+  .adaptate_nav > ul.links li a {
+    color: #fff;
+    font-family: "Comfortaa", cursive;
+  }
+
+  .adaptate_nav > ul.links li::before {
+    border-top: 2px solid #fff;
   }
 }
