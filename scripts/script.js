@@ -13,20 +13,22 @@ burgerBtn.addEventListener("click", () => {
   navWrapper.style.height = wrapper.offsetHeight + "px";
   nav.style.width = "30%";
   document.body.overflow = "hidden";
+  links.forEach((link) => (link.style.opacity = 1));
 });
 
 navWrapper.addEventListener("click", (e) => {
   if (e.target === navWrapper) {
-    navWrapper.style.width = "0%";
-    nav.style.width = "0%";
-    navWrapper.style.height = 0;
+    closeNav();
   }
 });
 
 links.forEach((item) => {
-  item.addEventListener("click", () => {
-    navWrapper.style.width = "0%";
-    nav.style.width = "0%";
-    navWrapper.style.height = 0;
-  });
+  item.addEventListener("click", closeNav);
 });
+
+function closeNav() {
+  navWrapper.style.width = "0%";
+  nav.style.width = "0%";
+  navWrapper.style.height = 0;
+  links.forEach((link) => (link.style.opacity = 0));
+}

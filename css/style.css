@@ -40,8 +40,8 @@ footer {
   font-family: "Bellota Text", cursive;
 }
 
-svg {
-  margin-bottom: -5px;
+main > svg {
+  margin-bottom: -10px;
 }
 
 header {
@@ -129,7 +129,7 @@ section.my_info .my_info_text {
 }
 
 section.my_info .my_info_text_wrapper > svg {
-  margin-top: -100px;
+  margin-top: -120px;
 }
 
 section.my_info .my_info_text h1 {
@@ -371,27 +371,23 @@ section.contacts .contacts_links img {
 }
 
 .navbar-link:nth-child(2) {
-  top: 7rem;
-  right: 4rem;
+  top: 9rem;
+  right: 3rem;
 }
 
 .navbar-link:nth-child(3) {
-  bottom: 7rem;
-  right: 4rem;
+  bottom: 5rem;
+  right: 6rem;
 }
 
 .navbar-link:nth-child(4) {
-  bottom: 2rem;
+  bottom: 5rem;
+  left: 6rem;
 }
 
 .navbar-link:nth-child(5) {
-  bottom: 7rem;
-  left: 4rem;
-}
-
-.navbar-link:nth-child(6) {
-  top: 7rem;
-  left: 4rem;
+  top: 9rem;
+  left: 3rem;
 }
 
 .navbar-btn {
@@ -437,11 +433,11 @@ section.contacts .contacts_links img {
     font-size: 20px;
   }
 
-  ul.links li {
+  header > ul.links li {
     font-size: 25px;
   }
 
-  ul.links li::before {
+  header > ul.links li::before {
     top: 35px;
   }
 
@@ -506,31 +502,35 @@ section.contacts .contacts_links img {
   }
 
   .navbar-link:nth-child(2) {
-    top: 7rem;
+    top: 8rem;
     right: 3rem;
   }
 
   .navbar-link:nth-child(3) {
-    bottom: 7rem;
-    right: 3rem;
+    bottom: 4rem;
+    right: 5rem;
   }
 
   .navbar-link:nth-child(4) {
-    bottom: 2rem;
+    bottom: 4rem;
+    left: 5rem;
   }
 
   .navbar-link:nth-child(5) {
-    bottom: 7rem;
-    left: 3rem;
-  }
-
-  .navbar-link:nth-child(6) {
-    top: 7rem;
+    top: 8rem;
     left: 3rem;
   }
 }
 
 @media screen and (max-width: 1250px) and (min-width: 1000px) {
+  header > ul.links li {
+    font-size: 20px;
+  }
+
+  header > ul.links li::before {
+    top: 30px;
+  }
+
   section.my_info .avatar {
     width: 400px;
     height: 330px;
@@ -566,13 +566,6 @@ section.contacts .contacts_links img {
 
   section.my_info .my_info_text_wrapper > svg {
     margin-top: -50px;
-  }
-  ul.links li {
-    font-size: 20px;
-  }
-
-  ul.links li::before {
-    top: 30px;
   }
 
   section h2 {
@@ -642,31 +635,37 @@ section.contacts .contacts_links img {
   }
 
   .navbar-link:nth-child(2) {
-    top: 6rem;
-    right: 3.5rem;
+    top: 7rem;
+    right: 2.5rem;
   }
 
   .navbar-link:nth-child(3) {
-    bottom: 6rem;
-    right: 3.5rem;
+    bottom: 3rem;
+    right: 5rem;
   }
 
   .navbar-link:nth-child(4) {
-    bottom: 2rem;
+    bottom: 3rem;
+    left: 5rem;
   }
 
   .navbar-link:nth-child(5) {
-    bottom: 6rem;
-    left: 3.5rem;
-  }
-
-  .navbar-link:nth-child(6) {
-    top: 6rem;
-    left: 3.5rem;
+    top: 7rem;
+    left: 2.5rem;
   }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 800px) {
+  header > ul.links li {
+    font-size: 15px;
+  }
+
+  header > ul.links li::before {
+    top: 25px;
+    width: 20px;
+    border-top: 1px solid #000;
+  }
+
   section.my_info .avatar {
     width: 300px;
     height: 250px;
@@ -703,13 +702,6 @@ section.contacts .contacts_links img {
 
   section.my_info .my_info_text_wrapper > svg {
     margin-top: -50px;
-  }
-  ul.links li {
-    font-size: 20px;
-  }
-
-  ul.links li::before {
-    top: 30px;
   }
 
   section h2 {
@@ -781,30 +773,30 @@ section.contacts .contacts_links img {
   }
 
   .navbar-link:nth-child(2) {
-    top: 5rem;
-    right: 2rem;
+    top: 6rem;
+    right: 2.5rem;
   }
 
   .navbar-link:nth-child(3) {
-    bottom: 5rem;
-    right: 2rem;
+    bottom: 3rem;
+    right: 4rem;
   }
 
   .navbar-link:nth-child(4) {
-    bottom: 2rem;
+    bottom: 3rem;
+    left: 4rem;
   }
 
   .navbar-link:nth-child(5) {
-    bottom: 5rem;
-    left: 2rem;
+    top: 6rem;
+    left: 2.5rem;
   }
 
-  .navbar-link:nth-child(6) {
-    top: 5rem;
-    left: 2rem;
-  }
   footer {
     font-size: 15px;
+  }
+  main > svg {
+    margin-bottom: -5px;
   }
 }
 
@@ -915,7 +907,7 @@ section.contacts .contacts_links img {
 
   section.contacts .contacts_links img {
     width: 30%;
-    transform: rotate(90deg);
+    transform: rotate(70deg);
   }
 
   .navbar-wrapper {
@@ -947,30 +939,30 @@ section.contacts .contacts_links img {
   }
 
   .navbar-link:nth-child(2) {
-    top: 5rem;
-    right: 2rem;
+    top: 6rem;
+    right: 2.5rem;
   }
 
   .navbar-link:nth-child(3) {
-    bottom: 5rem;
-    right: 2rem;
+    bottom: 3rem;
+    right: 4rem;
   }
 
   .navbar-link:nth-child(4) {
-    bottom: 2rem;
+    bottom: 3rem;
+    left: 4rem;
   }
 
   .navbar-link:nth-child(5) {
-    bottom: 5rem;
-    left: 2rem;
+    top: 6rem;
+    left: 2.5rem;
   }
 
-  .navbar-link:nth-child(6) {
-    top: 5rem;
-    left: 2rem;
-  }
   footer {
     font-size: 13px;
+  }
+  main > svg {
+    margin-bottom: -5px;
   }
 }
 @media screen and (max-width: 500px) and (min-width: 320px) {
@@ -1083,7 +1075,7 @@ section.contacts .contacts_links img {
     margin: 0 auto;
 
     width: 30%;
-    transform: rotate(90deg);
+    transform: rotate(70deg);
   }
 
   .navbar-wrapper {
@@ -1115,30 +1107,29 @@ section.contacts .contacts_links img {
   }
 
   .navbar-link:nth-child(2) {
-    top: 3.5rem;
-    right: 2rem;
+    top: 4.5rem;
+    right: 1.5rem;
   }
 
   .navbar-link:nth-child(3) {
-    bottom: 3.5rem;
-    right: 2rem;
+    bottom: 2rem;
+    right: 3rem;
   }
 
   .navbar-link:nth-child(4) {
-    bottom: 1.5rem;
+    bottom: 2rem;
+    left: 3rem;
   }
 
   .navbar-link:nth-child(5) {
-    bottom: 3.5rem;
-    left: 2rem;
-  }
-
-  .navbar-link:nth-child(6) {
-    top: 3.5rem;
-    left: 2rem;
+    top: 4.5rem;
+    left: 1.5rem;
   }
   footer {
     font-size: 10px;
+  }
+  main > svg {
+    margin-bottom: -5px;
   }
 }
 
@@ -1154,6 +1145,7 @@ section.contacts .contacts_links img {
   header {
     padding: 5px 50px;
   }
+
   .adaptate_nav_wrapper {
     z-index: 10;
     background-color: rgb(0, 0, 0, 0.5);
@@ -1222,6 +1214,7 @@ section.contacts .contacts_links img {
 
   .adaptate_nav > ul.links li {
     padding: 5px;
+
     font-size: 12px;
     position: relative;
     margin-bottom: 15px;
@@ -1229,6 +1222,8 @@ section.contacts .contacts_links img {
   }
 
   .adaptate_nav > ul.links li a {
+    opacity: 0;
+    transition: opacity 1s;
     color: #fff;
     font-family: "Comfortaa", cursive;
   }
