@@ -62,7 +62,7 @@ header > ul.links li {
 }
 
 header > ul.links li a {
-  color: #000;
+  color: #002a40;
   font-family: "Comfortaa", cursive;
 }
 
@@ -74,7 +74,7 @@ header > ul.links li::before,
   top: 40px;
   width: 30px;
   left: 0%;
-  border-top: 2px solid #000;
+  border-top: 2px solid #002a40;
   transition: width 0.4s;
 }
 
@@ -261,7 +261,7 @@ section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover::after {
   transition: 0.4s;
   width: 20px;
   height: 20px;
-  border: 2px solid black;
+  border: 2px solid #002a40;
   border-right: transparent;
   border-bottom: transparent;
 }
@@ -652,7 +652,7 @@ section.contacts .contacts_links img {
   header > ul.links li::before {
     top: 25px;
     width: 20px;
-    border-top: 1px solid #000;
+    border-top: 1px solid #002a40;
   }
 
   section.my_info .avatar {
@@ -1058,6 +1058,7 @@ section.contacts .contacts_links img {
     display: block;
     cursor: pointer;
     font-size: 30px;
+    color: #002a40;
   }
   header {
     padding: 5px 50px;
