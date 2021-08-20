@@ -7,7 +7,6 @@ const navWrapper = document.querySelector(".adaptate_nav_wrapper");
 const nav = document.querySelector(".adaptate_nav_wrapper .adaptate_nav");
 const links = document.querySelectorAll(".adaptate_nav > ul.links li a");
 const wrapper = document.querySelector(".wrapper");
-console.log(links);
 burgerBtn.addEventListener("click", () => {
   navWrapper.style.width = "100%";
   navWrapper.style.height = wrapper.offsetHeight + "px";

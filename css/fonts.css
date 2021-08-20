@@ -80,3 +80,102 @@
   font-family: "Comfortaa";
   src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
 }
+@media screen and (max-width: 1600px) and (min-width: 800px) {
+  section.my_info .my_info_text h1 {
+    font-size: 45px;
+  }
+  section.my_info .my_info_text {
+    padding-left: 100px;
+  }
+  section.my_info .my_info_text p {
+    font-size: 20px;
+  }
+
+  header > ul.links li {
+    font-size: 25px;
+  }
+
+  header > ul.links li::before {
+    top: 35px;
+  }
+
+  section h2 {
+    font-size: 45px;
+  }
+
+  section.about_me .about_me_text {
+    font-size: 20px;
+  }
+
+  section.my_info .my_info_text_wrapper > svg {
+    margin-top: -50px;
+  }
+
+  .skill_item .progress_fill {
+    font-size: 15px;
+    padding: 4px;
+  }
+  .skill_item .progress_fill span {
+    font-size: 25px;
+  }
+
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover span {
+    font-size: 12px;
+  }
+  section.portfolio .portfolio_grid .portfolio_item .portfolio_item_hover h2 {
+    font-size: 20px;
+  }
+
+  section.contacts .contacts_links img {
+    width: 30%;
+    margin-left: 100px;
+  }
+
+  .navbar-wrapper {
+    margin-top: 100px;
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .navbar {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .navbar-btn {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .navbar-btn span {
+    font-size: 2.5rem;
+  }
+
+  .navbar-link span {
+    font-size: 3rem;
+  }
+
+  .navbar-link:nth-child(1) {
+    top: 2rem;
+  }
+
+  .navbar-link:nth-child(2) {
+    top: 8rem;
+    right: 3rem;
+  }
+
+  .navbar-link:nth-child(3) {
+    bottom: 4rem;
+    right: 5rem;
+  }
+
+  .navbar-link:nth-child(4) {
+    bottom: 4rem;
+    left: 5rem;
+  }
+
+  .navbar-link:nth-child(5) {
+    top: 8rem;
+    left: 3rem;
+  }
+}
