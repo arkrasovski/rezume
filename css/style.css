@@ -48,6 +48,7 @@ header {
   position: relative;
   z-index: 2;
   padding: 10px 10%;
+  box-shadow: 0 12px 5px rgba(0, 64, 42, 0.3);
 }
 header > span {
   display: none;
@@ -125,7 +126,6 @@ section.my_info .my_info_text {
   font-size: 20px;
   background-color: #002a67;
   height: 100%;
-  box-sizing: padding-box;
 }
 
 section.my_info .my_info_text_wrapper > svg {
@@ -195,6 +195,7 @@ section.skills .skills_info {
 }
 
 .skill_item {
+  box-shadow: 2px 2px 2px 1px rgba(0, 42, 64, 0.2);
   display: flex;
   background-color: rgb(39, 102, 133, 0.3);
   color: #002a40;
@@ -237,6 +238,7 @@ section.portfolio .portfolio_grid {
 }
 section.portfolio .portfolio_grid .portfolio_item {
   position: relative;
+  box-shadow: 2px 2px 2px 1px rgba(0, 42, 64, 0.2);
 }
 
 section.portfolio .portfolio_grid .portfolio_item img {
@@ -337,7 +339,7 @@ section.contacts .contacts_links img {
 .navbar {
   width: 30rem;
   height: 30rem;
-  background-color: #6a7fdb;
+  background-color: #9daec0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -394,7 +396,7 @@ section.contacts .contacts_links img {
   position: absolute;
   width: 10rem;
   height: 10rem;
-  background-color: #ff6b6b;
+  background-color: #276685;
   display: flex;
   justify-content: center;
   align-items: center;
