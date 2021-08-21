@@ -160,7 +160,7 @@ section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li,
 section.about_me .about_me_text {
   transform: translate(0px, 120px);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
 }
 
 section.my_info .my_info_text h1.active,
@@ -168,13 +168,12 @@ section.my_info .my_info_text p.active,
 section.about_me .about_me_text.active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 0.8s ease 0s;
 }
 
 section.my_info .my_info_text_wrapper .my_info_text ul.my_info_links li.active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 0.8s ease 0.4s;
+  transition: transform 0.8s ease 0.4s, opacity 0.8s ease 0.4s;
 }
 
 section.about_me {
@@ -231,7 +230,7 @@ section.skills .skills_info {
   font-size: 20px;
   transform: translate(-1000px, 0px);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
 }
 
 .skill_item.active {
@@ -274,7 +273,7 @@ section.portfolio .portfolio_grid .portfolio_item {
   position: relative;
   box-shadow: 2px 2px 2px 1px rgba(0, 42, 64, 0.2);
   transform: scale(0);
-  transition: all 0.8s ease 0s;
+  transition: scale 0.8s ease 0s;
 }
 
 section.portfolio .portfolio_grid .portfolio_item.active {
@@ -365,7 +364,7 @@ section.contacts .contacts_links img {
   margin-left: 150px;
   transform: rotate(180deg);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
 }
 
 section.contacts .contacts_links img.active {
@@ -376,7 +375,7 @@ section.contacts .contacts_links img.active {
 .navbar-wrapper {
   transform: translate(-500px, 0);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
   margin-left: 100px;
   margin-top: 150px;
   width: 30rem;
