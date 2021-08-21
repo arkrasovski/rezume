@@ -7,12 +7,14 @@ const navWrapper = document.querySelector(".adaptate_nav_wrapper");
 const nav = document.querySelector(".adaptate_nav_wrapper .adaptate_nav");
 const links = document.querySelectorAll(".adaptate_nav > ul.links li");
 const wrapper = document.querySelector(".wrapper");
+
 burgerBtn.addEventListener("click", () => {
+  links.forEach((link) => link.classList.remove("active"));
+  animOnScroll();
   navWrapper.style.width = "100%";
   navWrapper.style.height = wrapper.offsetHeight + "px";
   nav.style.width = "30%";
   document.body.overflow = "hidden";
-  animOnScroll();
 });
 
 navWrapper.addEventListener("click", (e) => {

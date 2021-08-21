@@ -1200,7 +1200,6 @@ section.contacts .contacts_links img.active {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 550px) and (min-width: 320px) {
   .adaptate_nav > ul.links li {
     font-size: 12px;
