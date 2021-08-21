@@ -273,7 +273,7 @@ section.portfolio .portfolio_grid .portfolio_item {
   position: relative;
   box-shadow: 2px 2px 2px 1px rgba(0, 42, 64, 0.2);
   transform: scale(0);
-  transition: scale 0.8s ease 0s;
+  transition: transform 0.8s ease 0s;
 }
 
 section.portfolio .portfolio_grid .portfolio_item.active {
