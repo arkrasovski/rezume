@@ -242,6 +242,34 @@ section.skills .skills_info {
 .skill_item .progress_empty {
   height: 100%;
 }
+.skill_item .progress_fill {
+  width: 15%;
+  transition: width 2s;
+}
+
+.skill_item:nth-child(1) .progress_fill.active {
+  width: 90%;
+}
+
+.skill_item:nth-child(2) .progress_fill.active {
+  width: 80%;
+}
+
+.skill_item:nth-child(3) .progress_fill.active {
+  width: 60%;
+}
+
+.skill_item:nth-child(4) .progress_fill.active {
+  width: 40%;
+}
+
+.skill_item:nth-child(5) .progress_fill.active {
+  width: 60%;
+}
+
+.skill_item:nth-child(6) .progress_fill.active {
+  width: 70%;
+}
 
 .skill_item .progress_fill {
   background-color: #002a67;
