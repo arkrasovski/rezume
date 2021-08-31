@@ -11,7 +11,7 @@ const wrapper = document.querySelector(".wrapper");
 burgerBtn.addEventListener("click", () => {
   links.forEach((link) => link.classList.remove("active"));
   animOnScroll();
-  navWrapper.style.width = "100%";
+  navWrapper.style.opacity = 1;
   navWrapper.style.height = wrapper.offsetHeight + "px";
   nav.style.width = "30%";
   document.body.overflow = "hidden";
@@ -28,7 +28,7 @@ links.forEach((item) => {
 });
 
 function closeNav() {
-  navWrapper.style.width = "0%";
+  navWrapper.style.opacity = 0;
   nav.style.width = "0%";
   navWrapper.style.height = 0;
   links.forEach((link) => link.classList.remove("active"));
