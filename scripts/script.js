@@ -11,8 +11,9 @@ const wrapper = document.querySelector(".wrapper");
 burgerBtn.addEventListener("click", () => {
   links.forEach((link) => link.classList.remove("active"));
   animOnScroll();
-  navWrapper.style.opacity = 1;
-  navWrapper.style.height = wrapper.offsetHeight + "px";
+  navWrapper.classList.add("active");
+  //navWrapper.style.opacity = 1;
+  //navWrapper.style.height = "100vh";
   nav.style.width = "30%";
   document.body.overflow = "hidden";
 });
@@ -28,9 +29,10 @@ links.forEach((item) => {
 });
 
 function closeNav() {
-  navWrapper.style.opacity = 0;
+  navWrapper.classList.remove("active");
+  //navWrapper.style.opacity = 0;
   nav.style.width = "0%";
-  navWrapper.style.height = 0;
+  //navWrapper.style.height = 0;
   links.forEach((link) => link.classList.remove("active"));
 }
 
