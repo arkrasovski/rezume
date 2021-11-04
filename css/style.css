@@ -26,8 +26,6 @@ body {
 }
 main {
   flex: 1 0 auto;
-  position: relative;
-  z-index: 0;
 }
 footer {
   display: flex;
@@ -46,8 +44,6 @@ main > svg {
 }
 
 header {
-  position: relative;
-  z-index: 2;
   padding: 10px 10%;
   box-shadow: 0 12px 5px rgba(0, 64, 42, 0.3);
 }
@@ -899,6 +895,7 @@ section.contacts .contacts_links img.active {
   section.my_info {
     display: block;
     margin-bottom: 0;
+    /* overflow: hidden; */
   }
 
   section.my_info .avatar {
@@ -908,6 +905,7 @@ section.contacts .contacts_links img.active {
 
   section.my_info .avatar img {
     width: 100%;
+    height: 100%;
   }
 
   section.my_info .my_info_text_wrapper {
@@ -917,7 +915,7 @@ section.contacts .contacts_links img.active {
   section.my_info .my_info_text_wrapper::before {
     bottom: 100%;
     right: 0;
-    border-bottom: 400px solid #002a67;
+    border-bottom: 450px solid #002a67;
     border-left: 150px solid transparent;
   }
 
@@ -1163,7 +1161,7 @@ section.contacts .contacts_links img.active {
     display: none;
   }
   header > span {
-    display: block;
+    display: inline-block;
     cursor: pointer;
     font-size: 30px;
     color: #002a40;
