@@ -487,7 +487,7 @@ section.contacts .contacts_links img.active {
 .navbar-btn span {
   font-size: 3rem;
   color: #fff;
-  transition: color 0.5s;
+  transition: transform 0.5s;
 }
 
 .change .navbar-btn span {
