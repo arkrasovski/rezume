@@ -247,7 +247,7 @@ section.skills .skills_info {
 }
 
 .progress_fill > img {
-  height: 100%;
+  height: 30px;
   margin-right: 5px;
 }
 
