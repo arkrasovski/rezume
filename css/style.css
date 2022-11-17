@@ -8,6 +8,7 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 .wrapper {
   display: flex;
@@ -228,6 +229,7 @@ section.skills .skills_info {
   transform: translate(-1000px, 0px);
   opacity: 0;
   transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+  height: 40px;
 }
 
 .skill_item.active {
@@ -244,6 +246,11 @@ section.skills .skills_info {
   transition: width 2s;
 }
 
+.progress_fill > img {
+  height: 100%;
+  margin-right: 5px;
+}
+
 .skill_item:nth-child(1) .progress_fill.active {
   width: 90%;
 }
@@ -257,7 +264,7 @@ section.skills .skills_info {
 }
 
 .skill_item:nth-child(4) .progress_fill.active {
-  width: 40%;
+  width: 50%;
 }
 
 .skill_item:nth-child(5) .progress_fill.active {
@@ -265,7 +272,19 @@ section.skills .skills_info {
 }
 
 .skill_item:nth-child(6) .progress_fill.active {
+  width: 60%;
+}
+.skill_item:nth-child(7) .progress_fill.active {
   width: 70%;
+}
+.skill_item:nth-child(8) .progress_fill.active {
+  width: 70%;
+}
+.skill_item:nth-child(9) .progress_fill.active {
+  width: 70%;
+}
+.skill_item:nth-child(10) .progress_fill.active {
+  width: 50%;
 }
 
 .skill_item .progress_fill {
@@ -448,12 +467,13 @@ section.contacts .contacts_links img.active {
 }
 
 .navbar-link:nth-child(1) {
-  top: 2rem;
+  top: 3rem;
+  right: 8rem;
 }
 
 .navbar-link:nth-child(2) {
-  top: 9rem;
-  right: 3rem;
+  top: 12rem;
+  right: 2rem;
 }
 
 .navbar-link:nth-child(3) {
@@ -463,12 +483,17 @@ section.contacts .contacts_links img.active {
 
 .navbar-link:nth-child(4) {
   bottom: 5rem;
-  left: 6rem;
+  left: 8rem;
 }
 
 .navbar-link:nth-child(5) {
-  top: 9rem;
-  left: 3rem;
+  top: 3rem;
+  left: 7rem;
+}
+
+.navbar-link:nth-child(6) {
+  top: 12rem;
+  left: 2rem;
 }
 
 .navbar-btn {
