@@ -627,8 +627,12 @@ section.contacts .contacts_links img.active {
   }
 
   .navbar-link:nth-child(5) {
-    top: 8rem;
-    left: 3rem;
+    top: 4rem;
+    left: 6rem;
+  }
+  .navbar-link:nth-child(6) {
+    top: 10rem;
+    left: 2rem;
   }
 }
 
@@ -761,8 +765,12 @@ section.contacts .contacts_links img.active {
   }
 
   .navbar-link:nth-child(5) {
-    top: 7rem;
-    left: 2.5rem;
+    top: 4rem;
+    left: 4rem;
+  }
+  .navbar-link:nth-child(6) {
+    top: 10rem;
+    left: 2rem;
   }
 }
 
@@ -904,7 +912,12 @@ section.contacts .contacts_links img.active {
   }
 
   .navbar-link:nth-child(5) {
-    top: 6rem;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  .navbar-link:nth-child(6) {
+    top: 8rem;
     left: 2.5rem;
   }
 
@@ -1080,7 +1093,12 @@ section.contacts .contacts_links img.active {
   }
 
   .navbar-link:nth-child(5) {
-    top: 6rem;
+    top: 3rem;
+    left: 4rem;
+  }
+
+  .navbar-link:nth-child(6) {
+    top: 8rem;
     left: 2.5rem;
   }
 
@@ -1176,6 +1194,12 @@ section.contacts .contacts_links img.active {
     top: 4.5rem;
     left: 1.5rem;
   }
+
+  .navbar-link:nth-child(6) {
+    top: 1.5rem;
+    left: 8rem;
+  }
+
   footer {
     font-size: 10px;
   }
