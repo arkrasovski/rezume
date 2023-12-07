@@ -15,7 +15,7 @@ burgerBtn.addEventListener("click", () => {
   //navWrapper.style.opacity = 1;
   //navWrapper.style.height = "100vh";
   nav.style.width = "30%";
-  document.body.overflow = "hidden";
+  document.body.classList.toggle("no-scroll");
 });
 
 navWrapper.addEventListener("click", (e) => {

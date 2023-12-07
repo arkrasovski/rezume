@@ -10,6 +10,9 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
