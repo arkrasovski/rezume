@@ -15,7 +15,7 @@ burgerBtn.addEventListener("click", () => {
   //navWrapper.style.opacity = 1;
   //navWrapper.style.height = "100vh";
   nav.style.width = "30%";
-  document.body.classList.toggle("no-scroll");
+  document.body.classList.add("no-scroll");
 });
 
 navWrapper.addEventListener("click", (e) => {
@@ -29,6 +29,7 @@ links.forEach((item) => {
 });
 
 function closeNav() {
+  document.body.classList.remove("no-scroll");
   navWrapper.classList.remove("active");
   //navWrapper.style.opacity = 0;
   nav.style.width = "0%";
